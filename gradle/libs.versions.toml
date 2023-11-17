@@ -1,0 +1,48 @@
+[versions]
+agp = "8.1.2"
+kotlin = "1.9.10"
+dokka = "1.9.10"
+kotlinBinaryCompatibility = "0.13.2"
+androidxComposeBom = "2023.10.01"
+androidxComposeCompiler = "1.5.3"
+jvmTarget = "11"
+androidxComposeConstraintLayout = "1.0.1"
+androidxMaterial = "1.10.0"
+androidxAppcompat = "1.6.1"
+androidxActivity = "1.8.0"
+androidxFragment = "1.6.2"
+androidxLifecycle = "2.6.2"
+androidxAnnotation = "1.7.0"
+androidxTest = "1.5.2"
+spotless = "6.21.0"
+nexusPlugin = "0.25.3"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+android-test = {id = "com.android.test", version.ref = "agp"}
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-binary-compatibility = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version.ref = "kotlinBinaryCompatibility" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+nexus-plugin = { id = "com.vanniktech.maven.publish", version.ref = "nexusPlugin" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+
+[libraries]
+androidx-material = { module = "com.google.android.material:material", version.ref = "androidxMaterial" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompat" }
+androidx-fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "androidxFragment" }
+androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "androidxAnnotation" }
+
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material = { group = "androidx.compose.material", name = "material" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+androidx-compose-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "androidxComposeConstraintLayout" }
+
+# unit test
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "androidxTest" }

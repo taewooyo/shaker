@@ -4,6 +4,23 @@ import com.taewooyo.buildsrc.Configuration
 plugins {
     id(libs.plugins.android.library.get().pluginId)
     id(libs.plugins.kotlin.android.get().pluginId)
+    id(libs.plugins.nexus.plugin.get().pluginId)
+}
+
+apply(from = "${rootDir}/scripts/publish-module.gradle.kts")
+
+mavenPublishing {
+    val artifactId = "shaker"
+    coordinates(
+        Configuration.artifactGroup,
+        artifactId,
+        rootProject.extra.get("libVersion").toString()
+    )
+
+    pom {
+        name.set(artifactId)
+        description.set("Modifier's optimally created rotation, translation, and zoom animations are fully customizable for Android. Only Jetpack Compose is supported.")
+    }
 }
 
 android {

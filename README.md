@@ -46,7 +46,7 @@ Box(
 
 Shaker allows you to display scale, rotate, translate animation in Jetpack Compose easily.
 
-![Maven Central](https://img.shields.io/maven-central/v/io.github.taewooyo/shaker)
+![Maven Central Badge](https://img.shields.io/maven-central/v/io.github.taewooyo/shaker)
 
 Add the dependency below to your **module**'s `build.gradle` file
 

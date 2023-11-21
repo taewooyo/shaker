@@ -1,7 +1,7 @@
 <h1 align="center">Shaker</h1></br>
 
 <p align="center">
-👋 Modifier's optimally created rotation, translation, and zoom animations are fully customizable for Android. Only Jetpack Compose is supported. 🫨
+👋🫨 Modifier's optimally created rotation, translation, and zoom animations are fully customizable for Android. Only Jetpack Compose is supported. 🫨👋
 </p>
 
 <p align="center">

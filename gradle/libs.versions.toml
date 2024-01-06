@@ -15,7 +15,7 @@ androidxLifecycle = "2.6.2"
 androidxAnnotation = "1.7.1"
 androidxTest = "1.5.2"
 spotless = "6.21.0"
-nexusPlugin = "0.26.0"
+nexusPlugin = "0.27.0"
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -13,7 +13,7 @@ androidxActivity = "1.9.1"
 androidxFragment = "1.8.2"
 androidxLifecycle = "2.8.4"
 androidxAnnotation = "1.8.2"
-androidxTest = "1.6.1"
+androidxTest = "1.6.2"
 spotless = "6.21.0"
 nexusPlugin = "0.29.0"
 
